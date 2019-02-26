@@ -1,0 +1,77 @@
+// Bootstrap overrides for this template
+.text-primary {
+  color: $primary !important;
+}
+
+/*Btns*/
+.btn {
+  font-weight: 700;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 300px;
+  @include sans-serif-font;
+}
+
+.btn-outline {
+  color: $primary;
+  background-color: transparent;
+  background-image: none;
+  border: 1px solid $primary !important;
+  border-radius: 5px !important;
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: $white;
+    background-color: $primary;
+    border-color: $primary;
+  }
+}
+
+.btn-xl {
+  padding: 1rem 2rem;
+}
+
+.btn-primary {
+  background-color: $primary;
+  border-color: lighten( $primary, 15%);
+  &:hover,
+  &:focus,
+  &:active {
+    color: $white;
+    background-color: darken($primary, 5%) !important;
+  }
+  &:active,
+  &:focus {
+    box-shadow: 0 0 0 0.2rem rgba(173, 112, 9,.5) !important;
+  }
+}
+
+.btn-secondary{
+  background-color: $secondary;
+  border-color: darken($secondary, 15%);
+  &:hover,
+  &:focus,
+  &:active{
+    color: $white;
+    background-color: lighten($secondary, 5%) !important;
+  }
+  &:active,
+  &:focus{
+    box-shadow: 0 0 0 0.2rem rgba(92, 45, 144, .5) !important
+  }
+}
+
+/*Form*/
+.form-control {
+  border: 1px solid $secondary;
+
+  &:focus,
+  &:active {
+    border: $primary !important;
+  }
+  &:active,
+  &:focus { 
+    box-shadow: 0 0 0 0.2rem $primary !important;
+  }
+}

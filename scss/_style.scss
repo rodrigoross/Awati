@@ -1,0 +1,67 @@
+//Author Styles
+/*Modify hover.css*/
+@import url(hover-min.css);
+.vantagem{
+  width: 45%;
+  margin: 0.75em 1.5em;
+
+  &:hover{
+      color: $primary;
+  }
+}
+
+.vantagem-bg, {
+  color: $sec-dark;
+  width: 100%;
+}
+
+.vantagem-sm{
+    color: $gray-500;
+    margin: 1em 4em;
+    display: inline-block;
+
+    &:hover{
+      color: $primary;
+    }
+}
+
+.ident{
+  text-indent: 2.5em;
+}
+
+/* Produtos */
+.nSelecionado{
+  display: none;
+  visibility: hidden;
+}
+
+.selecionado{
+  display: block;
+  visibility: visible;
+  text-decoration: none;
+}
+
+.roman{
+  list-style-type:lower-roman;
+  margin-left: 4em;
+}
+
+.viavel{
+  list-style-type: circle;
+  color: $gray-900;
+}
+
+.formulario{
+	width: 80%;
+	margin: 5% 10%;
+	height: 350px;
+}
+
+.cpright{
+	color: $gray-400;
+	font-size: 16px;
+	font-family: Segoe, Segoe UI, DejaVu Sans, Trebuchet MS, Verdana," sans-serif";
+	font-weight: bolder;
+	left: 0;
+	bottom: 0;
+}

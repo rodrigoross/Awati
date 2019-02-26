@@ -1,0 +1,28 @@
+//Hover overrides
+/*Sweep*/
+.hvr-sweep-to-left:before, .hvr-sweep-to-right:before{
+  background: $primary 
+}
+
+.hvr-sweep-to-left:hover, .hvr-sweep-to-left:focus, .hvr-sweep-to-left:active,
+.hvr-sweep-to-right:hover, .hvr-sweep-to-right:focus, .hvr-sweep-to-right:active{
+  color: white !important;
+}
+
+/*Underline*/
+.hvr-underline-from-center::before{
+  background: $sec-dark;
+}
+
+.hvr-underline-reveal:before{
+  background: $secondary;
+}
+
+/*Fade*/
+.hvr-fade{
+    opacity: 0.7;
+}
+.hvr-fade:hover{
+    background-color: $sec-dark;
+    opacity: 1;
+}
